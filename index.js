@@ -275,7 +275,7 @@
                 "DICT - Diploma in Information Communication Technology", 
                 "DMET - Diploma in Mechanical Engineering Technology",
                 "DOMT - Diploma in Office Management Technology", 
-                "DRET - Diploma in Railway Engineering Technology",],
+                "DRET - Diploma in Railway Engineering Technology",]
         };
       
         return courseMap[college] || [];
