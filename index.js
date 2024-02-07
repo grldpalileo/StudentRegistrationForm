@@ -284,7 +284,7 @@
       function resetForm() {
         document.getElementById("form").reset();
         document.getElementById("txtage").value = "";
-        document.getElementById("program").innerHTML = "";
+        document.getElementById("program").innerHTML.reset();
         document.getElementById("program") = "";
         document.getElementById("college") = "";
       }
