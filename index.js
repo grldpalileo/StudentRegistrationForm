@@ -286,6 +286,7 @@
         document.getElementById("txtage").value = "";
         document.getElementById("program").innerHTML = "";
         document.getElementById("program") = "";
+        document.getElementById("college") = "";
       }
       
     
