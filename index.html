@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <script src="index.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>STUDENT REGISTRATION FORM</h2>
+      </div>
+      <form class="form" id="form" method="post" action="https://script.google.com/macros/s/AKfycbzZpgrGVcYntuadV0ncNDx3BTi5BaI23dCIupV1FxJi3B4fX9koLhgLWrnjUlkqRPKz/exec">
+     
+        <div class="form-control">
+          <label>First Name</label>
+            <input type="text" id="firstname" name="First Name" placeholder="Enter your first name" autocomplete="off" required/>
+
+        </div>
+    
+        <div class="form-control">
+          <label>Last Name</label>
+            <input type="text" id="lastname" name= "Last Name" placeholder="Enter your last name" autocomplete="off" required />
+
+        </div>
+
+      
+        <div class="form-control">
+          <label for="birthdate">Date of Birth:</label>
+            <input id="birthdate" type="date" name="Birthdate" placeholder="mm/dd/yyyy" onkeyup="getAgeVal(0)" onblur="getAgeVal(0);" autocomplete="off" required/>
+          
+        </div>
+
+        <div class="form-control">
+          <label for="txtage">Age:</label>
+            <input type="text" name="txtage" id="txtage"  autocomplete="off" required />
+        </div>
+        
+        <div class="form-control" >
+          <label>Gender :</label>
+            <div class="gender-radio" >
+              <input type="radio" id="male" name="gender" value="Male"required />
+                <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="Female" required />
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div class="form-control">
+          <label>Address</label>
+            <input type="text" id="address" name="Address" placeholder="Enter your address here" autocomplete="off" required  />
+        </div>
+        
+        <div class="form-control">
+          <label>Email</label>
+            <input type="Email" id="email" name="Email" placeholder="Enter your email" autocomplete="off"  required />
+        </div>
+
+        <div class="form-control">
+          <label>Contact Number</label>
+            <input type="text" id="contact" name="ContactNumber" placeholder="Enter your contact" autocomplete="off" maxlength="11" required />
+        </div>
+
+
+        <div class="form-control">
+          <label>Year Level</label>
+          <select id="yearLevel" name="YearLevel" required>
+            <option value="" disabled selected>Select Year Level</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year </option>
+            <option value="3rd">3rd Year </option>
+            <option value="4th">4th Year</option>
+            <option value="5th">5th Year</option>
+            <option value="Masters">Masteral</option>
+            <option value="Doctoral">Doctorate</option>
+            <option value="N/A">N/A</option>
+          </select>
+        </div>
+        
+        <div class="form-control">
+          <label>College</label>
+          <select id="college" name="College" required>
+            <option value="" disabled selected>Select College</option>
+            <option value="CAF">CAF - College of Accountancy and Finance </option>
+            <option value="CAL">CAL - College of Arts and Letters </option>
+            <option value="CBA">CBA - College of Business Administration </option>
+            <option value="COC">COC - College of Communication </option>
+            <option value="CCIS">CCIS - College of Computer and Information Sciences </option>
+            <option value="COED">COED - College of Education </option>
+            <option value="CEA">CEA - College of Engineering and Architecture </option>
+            <option value="CTHTM">CHTM - College of Hospitality and Tourism Management </option>
+            <option value="CL">CL - College of Law </option>
+            <option value="CHK">CHK - College of Human Kinetics </option>
+            <option value="CPSPA">CPSPA - College of Political Science and Public Administration </option>
+            <option value="CS">CS - College of Science </option>
+            <option value="CSSD">CSSD - College of Social Sciences and Development </option>
+            <option value="ITECH">ITECH - Institute of Technology </option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label>Program/Course</label>
+            <select id="program" name="Program" required >
+            <option value="" disabled selected>Select Program</option>
+            <!-- Programs for CAF -->
+            <option value="BSA">Bachelor of Science in Accountancy (BSA)</option>
+            <option value="BSMA">Bachelor of Science in Management Accounting (BSMA)</option>
+            <option value="BSBAFM">Bachelor of Science in Business Administration Major in Financial Management (BSBAFM)</option>
+            <!-- Programs for CAL -->
+            <option value="ABELS">Bachelor of Arts in English Language Studies (ABELS)</option>
+            <option value="BAF">Bachelor of Arts in Filipinology (ABF)</option>
+            <option value="ABLCS">Bachelor of Arts in Literary and Cultural Studies (ABLCS)</option>
+            <!-- Programs for CBA -->
+            <option value="DBA">Doctor in Business Administration (DBA)</option>
+            <option value="MBA">Master in Business Administration (MBA)</option>
+            <option value="BSBAHRM">Bachelor of Science in Business Administration major in Human Resource Management (BSBAHRM)</option>
+            <option value="BSBA-MM">Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)</option>
+            <option value="BSENTREP">Bachelor of Science in Entrepreneurship (BSENTREP)</option>
+            <option value="BSOA">Bachelor of Science in Office Administration (BSOA)</option>
+            <!-- Programs for COC -->
+            <option value="BADPR">Bachelor in Advertising and Public Relations (BADPR)</option>
+            <option value="BAB">Bachelor of Arts in Broadcasting (BA Broadcasting)</option>
+            <option value="BACR">Bachelor of Arts in Communication Research (BACR)</option>
+            <option value="BAJ">Bachelor of Arts in Journalism (BAJ)</option>
+            <!-- Programs for CCIS -->
+            <option value="BSIT">Bachelor of Science in Information Technology (BSIT)</option>
+            <option value="BSCS">Bachelor of Science in Computer Science (BSCS)</option>
+            <!-- Programs for COED -->
+            <option value="PhDEM">Doctor of Philsophy in Education Management (PhDEM)</option>
+            <option value="MAEM-EL">Master of Arts in Education Management (MAEM) with Specialization in Educational Leadership</option>
+            <option value="MAEM-IL">Master of Arts in Education Management (MAEM) with Specialization in Instructional Leadership</option>
+            <option value="MBE">Master in Business Education (MBE)</option>
+            <option value="MLIS">Master in Library and Information Science (MLIS)</option>
+            <option value="MAELT">Master of Arts in English Language Teaching (MAELT)</option>
+            <option value="MAED-ME">Master of Arts in Education major in Mathematics Education (MAEd-ME)</option>
+            <option value="MAPES">Master of Arts in Physical Education and Sports (MAPES)</option>
+            <option value="MAED-TCA">Master of Arts in Education major in Teaching in the Challenged Areas (MAED-TCA)</option>
+            <option value="PBDE">Post-Baccalaureate Diploma in Education (PBDE)</option>
+            <option value="BTLEd-HE">Bachelor of Technology and Livelihood Education (BTLEd) major in Home Economics</option>
+            <option value="BTLEd-IA">Bachelor of Technology and Livelihood Education (BTLEd) major in Industrial Arts</option>
+            <option value="BTLEd-ICT">Bachelor of Technology and Livelihood Education (BTLEd) major in Information and Communication Technology</option>
+            <option value="BLIS">Bachelor of Library and Information Science (BLIS)</option>
+            <option value="BSEd-Eng">Bachelor of Secondary Education (BSEd) major in English</option>
+            <option value="BSEd-Fil">Bachelor of Secondary Education (BSEd) major in Filipino</option>
+            <option value="BSEd-Math">Bachelor of Secondary Education (BSEd) major in Mathematics</option>
+            <option value="BSEd-Sci">Bachelor of Secondary Education (BSEd) major in Science</option>
+            <option value="BSEd-Soc">Bachelor of Secondary Education (BSEd) major in Social Studies</option>
+            <option value="BEEd">Bachelor of Elementary Education (BEEd)</option>
+            <option value="BECEd">Bachelor of Early Childhood Education (BECEd)</option>
+            <!-- Programs for CEA -->
+            <option value="BSCE">Bachelor of Science in Civil Engineering (BSCE)</option>
+            <option value="BSME">Bachelor of Science in Mechanical Engineering (BSME)</option>
+            <option value="BSEE">Bachelor of Science in Electrical Engineering (BSEE)</option>
+            <option value="BSIE">Bachelor of Science in Industrial Engineering (BSIE)</option>
+            <option value="BSCpE">Bachelor of Science in Computer Engineering (BSCpE)</option>
+            <option value="BSECE">Bachelor of Science in Electronics Engineering (BSECE)</option>
+            <option value="BSRE">Bachelor of Science in Railway Engineering (BSRE)</option>
+            <option value="BSArch">Bachelor of Science in Architecture (BSArch)</option>
+            <option value="BSID">Bachelor of Science in Interior Design (BSID)</option>
+            <option value="BSEP">Bachelor of Science in Environmental Planning (BSEP)</option>
+            <!-- Programs for CHTM -->
+            <option value="BSHM">Bachelor of Science in Hospitality Management (BSHM)</option>
+            <option value="BSTM">Bachelor of Science in Tourism Management (BSTM)</option>
+            <option value="BSTRM">Bachelor of Science in Transportation Management (BSTRM)</option>
+            <!-- Programs for CL -->
+            <option value="JD">Juris Doctor</option>
+            <!-- Programs for CHK -->
+            <option value="BPE">Bachelor of Physical Education (BPE)</option>
+            <option value="BSESS">Bachelor of Science in Exercises and Sports (BSESS)</option>
+            <!-- Programs for CPSPA -->
+            <option value="DPA">Doctor in Public Administration (DPA)</option>
+            <option value="MPA">Master in Public Administration (MPA)</option>
+            <option value="BPA">Bachelor of Public Administration (BPA)</option>
+            <option value="BAIS">Bachelor of Arts in International Studies (BAIS)</option>
+            <option value="BAPE">Bachelor of Arts in Political Economy (BAPE)</option>
+            <option value="BAPS">Bachelor of Arts in Political Science (BAPS)</option>
+            <!-- Programs for CS -->
+            <option value="BSBio">Bachelor of Science in Biology (BSBio)</option>
+            <option value="BSChem">Bachelor of Science in Chemistry (BSChem)</option>
+            <option value="BSFT">Bachelor of Science Food Technology (BSFT)</option>
+            <option value="BSAPMATH">Bachelor of Science in Applied Mathematics (BSAPMATH)</option>
+            <option value="BSND">Bachelor of Science in Nutrition and Dietetics (BSND)</option>
+            <option value="BSFT">Bachelor of Science Food Technology (BSFT)</option>
+            <option value="BSPHY">Bachelor of Science in Physics (BSPHY)</option>
+            <option value="BSSTAT">Bachelor of Science in Statistics (BSSTAT)</option>
+            <!-- Programs for CSSD -->
+            <option value="BAH">Bachelor of Arts in History (BAH)</option>
+            <option value="BAS">Bachelor of Arts in Sociology (BAS)</option>
+            <option value="BSC">Bachelor of Science in Cooperatives (BSC)</option>
+            <option value="BSE">Bachelor of Science in Economics (BSE)</option>
+            <option value="BSPSY">Bachelor of Science in Psychology (BSPSY)</option>
+            <!-- Programs for ITECH -->
+            <option value="DCvET">Diploma in Civil Engineering Technology (DCvET)</option>
+            <option value="DCET">Diploma in Computer Engineering Technology (DCET)</option>
+            <option value="DEET">Diploma in Electrical Engineering Technology (DEET)</option>
+            <option value="DECET">Diploma in Electronics Engineering Technology (DECET)</option>
+            <option value="DICT">Diploma in Information Communication Technology (DICT)</option>
+            <option value="DMET">Diploma in Mechanical Engineering Technology (DMET)</option>
+            <option value="DOMT">Diploma in Office Management Technology (DOMT)</option>
+            <option value="Doctorate">Diploma in Railway Engineering Technology (DRET)</option>
+            </select>
+
+
+        </div>
+
+
+
+        <div class="form-control">
+          <label>Username</label>
+            <input type="text" id="username" name="Username" placeholder="Enter your username" autocomplete="off" required />
+        </div>
+
+        <div class="form-control">
+          <label>Password</label>
+            <input type="password" id="password" name="Password" placeholder="Enter your password" required />
+        </div>
+       
+        <div class="form-control">
+          <label>Confirm Password</label>
+            <input type="password" id="cpassword" name="Confirmation" placeholder="Enter your password again" required/>
+
+        </div>
+
+        <div>
+          <label for="terms_and_conditions" >I agree to the terms & conditions:</label>
+            <input type="checkbox" id="terms_and_conditions" value="1" onclick="terms_changed(this)" required/>
+        </div>
+
+        <div>
+          <button type="button" id="reset_button" onclick="resetForm()" class="btn">Reset</button>
+          <button type="submit" id="submit_button" class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
