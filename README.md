@@ -3,6 +3,6 @@
 
 
 Instructions:
-To check if the data inputted was successfully stored in the google sheet. Just open the data collection.txt file and copy the 
 
+To check if the data inputted was successfully stored in the google sheet. Just open the data collection.txt file and copy the 
 link to your browser and see if the data was already stored.
